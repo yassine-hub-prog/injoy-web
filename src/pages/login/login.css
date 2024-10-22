@@ -1,0 +1,134 @@
+
+
+.login_overlayer {
+    display: flex; /* Utiliser flexbox pour une mise en page côte à côte */
+    height: 100vh; /* Utiliser la hauteur complète de la fenêtre */
+}
+
+.login_overlayer .error{
+    color: red;
+    padding: 5px;
+}
+
+.login-container .title-2{
+    font-size: 35px;
+}
+
+.login-container .title-4{
+    font-size: 14px;
+    color: hsl(0, 0%, 61%);
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.login-container {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 50%; /* Prendre 50% de la largeur de l'écran */
+    max-width: 100%; /* Évite le débordement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.image-container {
+    width: 50%; /* Prendre 50% de la largeur de l'écran */
+    max-width: 100%; /* Évite le débordement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Couleur de fond de l'image (optionnel) */
+}
+
+.image-container div{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.image-container b.g{
+    font-size: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.image-container p{
+    transform: translateY(-100px);
+    width: 90%;
+    margin: 0 5%;
+}
+
+.image-container .user{
+    transform: translateY(-90px);  
+    display: flex;
+    align-items: center;
+
+}
+
+.image-container .user img{
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    margin-right: 7px;
+    object-fit: cover;
+}
+
+.image-container .user b{
+    font-size: 16px;
+}
+
+
+
+
+.login-container input {
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    width: 100%; /* Champs de saisie en pleine largeur */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+    padding-top: 6px;
+}
+
+.login-container input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #000; /* Black border on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on focus */
+}
+
+.login-container button {
+    background-color: #000; /* Black button */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 100%; /* Bouton en pleine largeur */
+    margin-bottom: 15px;
+}
+
+.login-container button:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+    .login_overlayer {
+        flex-direction: column; /* Vertical layout on small screens */
+        height: 100vh;
+    }
+    
+    .login-container,
+    .image-container {
+        width: 95%; /* Prendre 100% de la largeur sur les petits écrans */
+        padding: 0 2.5%;
+        height: 100%;
+    }
+
+    .image-container {
+        display: none; /* Cacher la section image sur petits écrans */
+    }
+}

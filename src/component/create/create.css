@@ -1,0 +1,84 @@
+.create-post {
+    border: 1px solid #e1e8ed;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .create-post .post-header {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+  
+  .create-post .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .create-post .post-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    resize: none; /* Désactive la possibilité de redimensionner manuellement */
+    overflow-y: hidden; /* Cache la scrollbar jusqu'à ce que le maximum soit atteint */
+    max-height: 200px; /* Limite la hauteur à 200px (~7 lignes) */
+    line-height: 22px;
+  }
+  
+  .create-post .post-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .create-post .everyone-can-reply {
+    color: #1da1f2;
+    font-size: 14px;
+  }
+  
+  .create-post .info-icon {
+    margin-right: 5px;
+  }
+  
+  .create-post .post-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .create-post .icon {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+  }
+  
+  .create-post .post-button {
+    padding: 10px 25px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .create-post .post-button:hover {
+    background-color: #00000075;
+  }
+
+  .create-post .image-preview{
+    width: 100%;
+  }
+
+  .create-post .image-preview img{
+    width: 100%;
+    border-radius: 6px;
+  }
+  
